@@ -1,0 +1,633 @@
+@import url(common.css);
+@font-face {
+  font-family: 'dalmoori';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/dalmoori.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family:'bitbit';
+  src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
+}
+@font-face {
+  font-family: 'HSSummer';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSSummer.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap');
+
+
+
+#wrap{
+  background-color: #f5a6d2;
+  width: 100%;
+
+}
+*{box-sizing: border-box;}
+a{display: block;}
+
+.wrapBox{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.2);
+  /* background: rgb(126, 12, 126); */
+}
+#moheader{display: none;}
+#pcheader{
+  width: 18%;
+  min-height: 100%;
+  background-color: rgb(126, 12, 126);
+}
+/* .menu h1{border: 1px solid #000;} */
+.menu h1 img{
+  width: 130px;
+  height: 85px;
+}
+.menu{
+/*   background-color: azure; */
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(217, 152, 255);
+  justify-content: space-evenly;
+  align-items:center;
+  font-family: 'dalmoori';
+  font-size: 18px;
+}
+.menu ul li{
+  text-transform: capitalize;
+  padding-bottom: 15px;
+  text-align: center;
+  margin-bottom: 35px;
+  width: 200px;
+  border-bottom: 1px dotted #38383d;
+  transition: 0.3s;
+  position: relative;
+}
+.menu li:nth-of-type(1)::before{
+  position: absolute;
+  content: '\f0c8';
+  font-family: fontawesome;
+  top: 0;
+  right: 20px;
+  font-size: 15px;
+}
+.menu li:nth-of-type(2)::before{
+  position: absolute;
+  content: '\e53b';
+  font-family: 'Material Icons Outlined';
+  top: 0;
+  right: 20px;
+  font-size: 20px;
+}
+.menu li:nth-of-type(3)::before{
+  position: absolute;
+  content: '\e871';
+  font-family: 'Material Icons Outlined';
+  top: 0;
+  right: 20px;
+  font-size: 20px;
+}
+.menu li:nth-of-type(4)::before{
+  position: absolute;
+  content: '\f1b2';
+  font-family: fontawesome;
+  top: 0;
+  right: 20px;
+  font-size: 15px;
+}
+.menu ul li:nth-of-type(1):hover{
+  color: rgb(252, 164, 149);
+  border-bottom: 1px dotted  rgb(252, 164, 149);
+}
+.menu li:hover:nth-of-type(1)::before{color: rgb(252, 164, 149);}
+.menu ul li:nth-of-type(2):hover{
+  color: rgb(91, 172, 204);
+  border-bottom: 1px dotted rgb(91, 172, 204);
+}
+.menu li:hover:nth-of-type(2)::before{color: rgb(91, 172, 204);}
+.menu ul li:nth-of-type(3):hover{
+  color: rgb(223, 215, 109);
+  border-bottom: 1px dotted  rgb(202, 195, 93);
+}
+.menu li:hover:nth-of-type(3)::before{color:  rgb(202, 195, 93);}
+.menu ul li:nth-of-type(4):hover{
+  color: rgb(88, 199, 121);
+  border-bottom: 1px dotted  rgb(88, 199, 121);
+}
+.menu li:hover:nth-of-type(4)::before{color: rgb(88, 199, 121);}
+
+
+
+/* PC-Section */
+.main{
+  width: 100%;
+  max-width: 1200px;
+  height: 700px;
+  background: url(../image/layer.jpg);
+}
+.main h2{
+  text-align: center;
+  line-height: 700px;
+  text-transform: capitalize;
+}
+.main h2 span{
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce .3s ease infinite alternate;
+  font-family:'bitbit';
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 0 1px 0 #CCC,
+  0 2px 0 #CCC,
+  0 3px 0 #CCC,
+  0 4px 0 #CCC,
+  0 5px 0 #CCC,
+  0 6px 0 transparent,
+  0 7px 0 transparent,
+  0 8px 0 transparent,
+  0 9px 0 transparent,
+  0 10px 10px rgba(0, 0, 0, .4);
+  margin-right: 30px;
+}
+
+h2 span:nth-child(2) { animation-delay: .1s; }
+h2 span:nth-child(3) { animation-delay: .2s; }
+h2 span:nth-child(4) { animation-delay: .3s; }
+h2 span:nth-child(5) { animation-delay: .4s; }
+h2 span:nth-child(6) { animation-delay: .5s; }
+h2 span:nth-child(7) { animation-delay: .6s; }
+h2 span:nth-child(8) { animation-delay: .7s; }
+
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #CCC,
+  0 2px 0 #CCC,
+  0 3px 0 #CCC,
+  0 4px 0 #CCC,
+  0 5px 0 #CCC,
+  0 6px 0 #CCC,
+  0 7px 0 #CCC,
+  0 8px 0 #CCC,
+  0 9px 0 #CCC,
+  0 50px 25px rgba(0, 0, 0, .2);
+  }
+}
+/* .main ul li:nth-child(1){
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: cadetblue;
+} */
+.fourcut ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(126, 12, 126);
+  height: 300px;
+}
+.fourcut ul li{
+  display: flex;
+/*   flex-direction: column; */
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 130, 178);
+  font-family: 'HSSummer';
+  font-size: 80px;
+  padding-top: 70px;
+  color: #ffffff;
+  line-height: 50px;
+  box-shadow: 2px 2px 2px 1px rgb(109, 5, 104);
+  border-radius: 15%;
+  position: relative;
+}
+/* 첫번째 호버 */
+.fourcut ul li:nth-child(1) span{
+  display: none;
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  bottom: -15%;
+  left: 38%;
+}
+.fourcut ul li:first-child:hover{
+  background: url(../image/flat.PNG) no-repeat center;
+  background-size: 100%;
+  color: transparent;
+  box-shadow: none;
+}
+.fourcut ul li:first-child:hover span{
+  display: block;
+}
+/* 두번째 호버 */
+.fourcut ul li:nth-child(2) span{
+  display: none;
+  margin-top: 120px;
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  bottom: -15%;
+  left: 25%;
+}
+.fourcut ul li:nth-child(2):hover{
+  background: url(../image/metarial.png) no-repeat center;
+  background-size: 100%;
+  color: transparent;
+  box-shadow: none;
+}
+.fourcut ul li:nth-child(2):hover span{
+  display: block;
+}
+/* 세번째 호버 */
+.fourcut ul li:nth-child(3) span{
+  display: none;
+  margin-top: 120px;
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  bottom: -15%;
+  left: 36%;
+}
+.fourcut ul li:nth-child(3):hover{
+  background: url(../image/card.png) no-repeat center;
+  background-size: 100%;
+  color: transparent;
+  box-shadow: none;
+}
+.fourcut ul li:nth-child(3):hover span{
+  display: block;
+}
+/* 네번쨰 호버 */
+.fourcut ul li:nth-child(4) span{
+  display: none;
+  margin-top: 120px;
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  bottom: -15%;
+  left: 6%;
+}
+.fourcut ul li:nth-child(4):hover{
+  background: url(../image/Neumorphism.jpg) no-repeat center;
+  background-size: 100%;
+  color: transparent;
+  box-shadow: none;
+}
+.fourcut ul li:nth-child(4):hover span{
+  display: block;
+}
+
+.content1{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(126, 12, 126);
+}
+.content1 ul{
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-family: 'Sunflower', sans-serif;
+  font-weight: 500;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+}
+.content1 ul:first-of-type{
+  background: darkorange;
+}
+.content1 ul li h3{
+  margin-bottom: 5px;
+}
+.content1 ul li p{
+  font-family: 'Sunflower', sans-serif;
+}
+.content1 ul:nth-of-type(2){
+  background: skyblue;
+  padding: 10px;
+}
+.content1 ul:nth-of-type(3){
+  background: greenyellow;
+  padding: 10px;
+}
+.content1 ul:nth-of-type(4){
+  background: rgb(242, 137, 252);
+  padding: 10px;
+}
+/* 푸터 */
+.footer{
+  background-color: rgb(126, 12, 126);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: end;
+}
+.f_logo{
+  flex: 1;
+  text-align: center;
+}
+.f_logo img{
+  width: 70px;
+  height: 50px;
+  filter: invert(50%);
+}
+address{
+  flex: 10;
+  font-style: normal;
+  font-size: 13px;
+  color: #727272;
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+  .wrapBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .main{
+    width: 100%;
+    max-width: 1199px;
+    height: 700px;
+    background: url(../image/tablet.jpg) no-repeat;
+    background-size: contain;
+  }
+  #moheader{display: none;}
+  #pcheader{
+    width: 100%;
+    min-height: 20%;
+  }
+  .menu{
+    flex-flow: row wrap;
+    height: 150px;
+  }
+  .menu ul{
+    display: flex;
+    align-items: center;
+  }
+  .menu ul li{
+    line-height: 70px;
+    border-bottom: none;
+  }
+  .menu h1{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px dotted rgb(180, 34, 168);
+  }
+  .menu ul li:nth-of-type(1):hover{
+    color: rgb(252, 164, 149);
+    border-bottom: none;
+  }
+  .menu ul li:nth-of-type(2):hover{
+    color: rgb(91, 172, 204);
+    border-bottom: none;
+  }
+  .menu ul li:nth-of-type(3):hover{
+    color: rgb(223, 215, 109);
+    border-bottom: none;
+  }
+  .menu ul li:nth-of-type(4):hover{
+    color: rgb(88, 199, 121);
+    border-bottom: none;
+  }
+/* SECTION */
+.fourcut ul{
+  height: 500px;
+  flex-flow: column wrap;
+}
+.fourcut ul li{
+  width: 40%;
+  border-radius: 1%;
+}
+/* 첫번째 호버 */
+.fourcut ul li:nth-child(1) span{
+  font-size: 25px;
+  position: absolute;
+  bottom: -20%;
+  left: 45%;
+}
+.fourcut ul li:first-child:hover{
+  background-size: 50%;
+}
+/* 두번째 호버 */
+.fourcut ul li:nth-child(2) span{
+  font-size: 25px;
+  position: absolute;
+  bottom: -20%;
+  left: 40%;
+}
+.fourcut ul li:nth-child(2):hover{
+  background-size: 50%;
+}
+/* 세번째 호버 */
+.fourcut ul li:nth-child(3) span{
+  font-size: 25px;
+  position: absolute;
+  bottom: -20%;
+  left: 45%;
+}
+.fourcut ul li:nth-child(3):hover{
+  background-size: 50%;
+}
+/* 네번쨰 호버 */
+.fourcut ul li:nth-child(4) span{
+  font-size: 25px;
+  position: absolute;
+  bottom: -20%;
+  left: 35%;
+}
+.fourcut ul li:nth-child(4):hover{
+  background-size: 50%;
+}
+.content1{
+
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+}
+}
+@media screen and (max-width:767px) {
+
+  .wrapBox{
+    display: flex;
+    flex-direction: column;
+  }
+  #pcheader{display: none;}
+  #moheader{
+    display: block;
+    width: 30%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #910a54;
+  }
+  #moheader h1{
+    text-align: center;
+  }
+  #moheader h1 img{
+    width: 80px;
+    padding: 10px 0;
+  }
+  .momenu li{
+    font-family: 'dalmoori';
+    color: rgb(217, 152, 255);
+    width: inherit;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .momenu li:nth-of-type(1)::before{
+    position: absolute;
+    content: '\f0c8';
+    font-family: fontawesome;
+    top: 20px;
+    right: 20px;
+    font-size: 15px;
+  }
+  .momenu li:nth-of-type(2)::before{
+    position: absolute;
+    content: '\e53b';
+    font-family: 'Material Icons Outlined';
+    top: 20;
+    right: 20px;
+    font-size: 20px;
+  }
+  .momenu li:nth-of-type(3)::before{
+    position: absolute;
+    content: '\e871';
+    font-family: 'Material Icons Outlined';
+    top: 20;
+    right: 20px;
+    font-size: 20px;
+  }
+  .momenu li:nth-of-type(4)::before{
+    position: absolute;
+    content: '\f1b2';
+    font-family: fontawesome;
+    top: 20;
+    right: 10px;
+    font-size: 15px;
+  }
+  .momenu li:nth-of-type(1):hover{
+    color: rgb(252, 164, 149);
+    border-bottom: 1px dotted  rgb(252, 164, 149);
+  }
+  .momenu li:hover:nth-of-type(1)::before{color: rgb(252, 164, 149);}
+  .momenu li:nth-of-type(2):hover{
+    color: rgb(91, 172, 204);
+    border-bottom: 1px dotted rgb(91, 172, 204);
+  }
+  .momenu li:hover:nth-of-type(2)::before{color: rgb(91, 172, 204);}
+  .momenu li:nth-of-type(3):hover{
+    color: rgb(223, 215, 109);
+    border-bottom: 1px dotted  rgb(202, 195, 93);
+  }
+  .momenu li:hover:nth-of-type(3)::before{color:  rgb(202, 195, 93);}
+  .momenu li:nth-of-type(4):hover{
+    color: rgb(88, 199, 121);
+    border-bottom: 1px dotted  rgb(88, 199, 121);
+  }
+  .momenu li:hover:nth-of-type(4)::before{color: rgb(88, 199, 121);}
+  /* Trigger */
+.trigger{
+  /* border: 1px solid red; */
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.trigger span{
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #6f0b83;
+  transition: 0.3s;
+}
+.trigger span:nth-child(1){top: 0;}
+.trigger span:nth-child(2){top: 50%;}
+.trigger span:nth-child(3){top: 100%;}
+
+/* jQuery 에서 trigger클릭시 바뀌는 부분 */
+.trigger.active span:nth-child(1){top: 50%;transform: rotate(45deg);}
+.trigger.active span:nth-child(2){opacity: 0;}
+.trigger.active span:nth-child(3){top: 50%;transform: rotate(-45deg);}
+
+.main{
+  width: 100%;
+  max-width: 767px;
+  background: url(../image/mobile.jpg) no-repeat;
+  background-size: contain;
+  }
+  
+.main h2 span{
+  font-size: 70px;
+}
+.fourcut ul{
+  height: 1000px;
+  flex-direction: column;
+  padding-right: 35%;
+
+}
+.fourcut ul li{
+  width: 100%;
+  border-radius: 0;
+}
+.fourcut ul li:first-child:hover{
+  background: url(../image/flat.PNG) no-repeat top center;
+  background-size: 30%;
+  color: transparent;
+  box-shadow: none;
+}
+.fourcut ul li:nth-child(2):hover{
+  background: url(../image/metarial.png) no-repeat top center;
+  background-size: 30%;
+  color: transparent;
+  box-shadow: none;
+}
+.fourcut ul li:nth-child(3):hover{
+  background: url(../image/card.png) no-repeat top center;
+  background-size: 30%;
+  color: transparent;
+  box-shadow: none;
+}
+.fourcut ul li:nth-child(4):hover{
+  background: url(../image/Neumorphism.jpg) no-repeat top center;
+  background-size: 30%;
+  color: transparent;
+  box-shadow: none;
+}
+.fourcut ul li:nth-child(1):hover span{
+  display: none;
+}
+.fourcut ul li:nth-child(2):hover span{
+  display: none;
+}
+.fourcut ul li:nth-child(3):hover span{
+  display: none;
+}
+.fourcut ul li:nth-child(4):hover span{
+  display: none;
+}
+.content1{
+  width: 100%;
+  max-width: 767px;
+  height: 500px;
+}
+
+
+}
+
