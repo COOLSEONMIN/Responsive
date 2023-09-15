@@ -583,17 +583,19 @@ address{
   width: 100%;
   max-width: 767px;
   background: url(../image/mobile.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
   }
   
 .main h2 span{
   font-size: 70px;
 }
+.fourcut{
+  width: 100%;
+  max-width: 767px;
+}
 .fourcut ul{
   height: 1000px;
   flex-direction: column;
-  padding-right: 35%;
-
 }
 .fourcut ul li{
   width: 100%;
@@ -642,7 +644,7 @@ address{
 }
 .footer{
   width: 100%;
-  max-width: 1199px;
+  max-width: 767px;
 }
 
 }
