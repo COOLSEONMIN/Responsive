@@ -363,7 +363,7 @@ address{
     max-width: 1199px;
     height: 700px;
     background: url(../image/tablet.jpg) no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
   #moheader{display: none;}
   #pcheader{
@@ -465,10 +465,13 @@ address{
 
 }
 @media screen and (max-width:767px) {
+  
 
   .wrapBox{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 767px;
   }
   .fourcut{
     width: 100%;
